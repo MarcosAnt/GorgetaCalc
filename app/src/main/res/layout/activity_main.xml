@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cinza_FFDADADA"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:shrinkColumns="1, 2, 3"
+    tools:context="com.example.marcos.gorgetacalc.MainActivity">
+
+    #Row 0
+    <TableRow
+        android:id="@+id/tblRow0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="Valor da conta:"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtValor"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:ems="10"
+            android:hint="100.00"
+            android:inputType="numberDecimal" />
+
+    </TableRow>
+
+    #Row 1
+    <TableRow
+        android:id="@+id/tblRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvSpan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="10%"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvFifteen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15%"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTwenty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="20%"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </TableRow>
+
+    #Row 2
+    <TableRow
+        android:id="@+id/tblRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvDica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Dica:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtDica10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtDica15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtDica20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    #Row 3
+    <TableRow
+        android:id="@+id/tblRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Total:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtTotal10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtTotal15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtTotal20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    #Row 4
+    <TableRow
+        android:id="@+id/tblRow4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvGorgeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Gorgeta"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/skGorgeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:max="30"
+            android:progress="18" />
+
+        <TextView
+            android:id="@+id/tvSkGorgeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="18%"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </TableRow>
+
+    #Row 5
+    <TableRow
+        android:id="@+id/tblRow5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvValorDica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Valor:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtTotalDica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvValorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Total:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtValorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="auto"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+</android.widget.TableLayout>
